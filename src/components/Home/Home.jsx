@@ -1,12 +1,13 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Course from '../Course/Course';
 
 import './Home.css'
 
 const Home = () => {
     const courses = useLoaderData();
-    // const {name, logo} = courses.data;
-    console.log(courses.data);
+   
+    console.log(courses);
     return (
        <div>
          <div className='hero'>
@@ -20,13 +21,10 @@ const Home = () => {
         </div>
         <div className=' courses'>
             {
-                courses.data.map(course => <div className='course'  key={courses.data.id}>
-                    <img src={course.logo? course.logo : 'not found'} alt="" />
-                   <div className='course-detail'>
-                        <h2> {course.name}</h2>  
-                        <button>Start Quiz</button>  
-                    </div> 
-                </div>)
+                courses.data.map(course => <Course
+                    key={course.id}
+                    course={course}
+                ></Course>)
             }
         </div>
         

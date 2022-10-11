@@ -14,7 +14,7 @@
 
 .course{
     border: 2px solid gray;
-    
+    display: flex;
 }
 .course img{
     width: 300px;
