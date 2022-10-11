@@ -1,0 +1,21 @@
+.hero{
+    background-image: url('/src/resources/image1.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .hero-img{
+    border-radius: 30px;
+} */
+.hero-title{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.course{
+    border: 2px solid gray;
+    
+}
+.course img{
+    width: 300px;
+}
