@@ -11,11 +11,3 @@
     margin-left: 15px;
     font-size: 25px;
 }
-
-.course{
-    border: 2px solid gray;
-    display: flex;
-}
-.course img{
-    width: 300px;
-}

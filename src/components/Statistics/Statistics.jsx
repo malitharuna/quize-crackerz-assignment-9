@@ -10,9 +10,9 @@ const Rechart = () => {
     console.log(topics.data);
     return (
         <div >
-            <LineChart style={{backgroundColor:'lightcyan', margin: '0 auto', padding:'20px'}} 
-                width={500}
-                height={300}
+            <ResponsiveContainer width="75%"
+                height={300} style={{backgroundColor:'lightcyan', margin: '0 auto', padding:'20px'}}>
+            <LineChart  
                 data={topics.data}
                 margin={{
                     top: 5,
@@ -33,6 +33,7 @@ const Rechart = () => {
                         activeDot={{ r: 8 }}
                     /> 
             </LineChart>
+            </ResponsiveContainer>
 
             <h3>Charts: Web Development Courses Question chart </h3>
         </div>

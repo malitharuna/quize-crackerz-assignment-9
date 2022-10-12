@@ -11,3 +11,15 @@
     margin-right: 12px;
     padding: 10px;
 }
+
+@media  screen and (min-width: 767px){
+   .header{
+    /* display: block; */
+    padding: 30px;
+    background: lightsalmon;
+   } 
+   .header a{
+    margin-right: 8px;
+    padding: 8px;
+    }
+}
