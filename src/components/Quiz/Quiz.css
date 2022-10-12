@@ -1,8 +1,17 @@
-.answer-option{
-    background-color: blue;
+.answers{
+    text-align: left;
     width: 50%;
     margin: 0 auto;
-    text-align: left;
-    /* padding: 5px; */
+    background-color: lightgray;
+    position: relative;
+}
+.answer-option{
+    background-color: coral;
+    margin: 10px;
 
+}
+.answer-icon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
