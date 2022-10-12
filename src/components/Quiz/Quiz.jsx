@@ -12,7 +12,7 @@ const Quiz = () => {
     
     const  handleCorrectIcon=(option)=>{
         // if(correctAnswer){
-        //     option.id = correctAnswer
+        //     option.id = conpmrrectAnswer
         // }
 
     }
