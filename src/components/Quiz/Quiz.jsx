@@ -43,12 +43,7 @@ const Quiz = () => {
                     </div>
                 </div>)
             }
-            </div>
-            <div>
-            </div>
-            <Statistics 
-                question={question}>
-            </Statistics>
+            </div>         
         </div>
     );
 };
