@@ -6,6 +6,7 @@ import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 import Main from './layouts/Main';
+import Statistics from './components/Statistics/Statistics.jsx'
 
 function App() {
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         return fetch(`https://openapi.programming-hero.com/api/quiz/${params.courseId}`)
       },
       element: <Quiz></Quiz>
+    },
+    {
+      path: '/statistics',
+      element: <Statistics></Statistics>
     },
     {
       path: '/blog',

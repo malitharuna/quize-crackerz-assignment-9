@@ -7,7 +7,7 @@ import './Home.css'
 const Home = () => {
     const courses = useLoaderData();
    
-    console.log(courses);
+    // console.log(courses);
     return (
        <div>
          <div className='hero'>

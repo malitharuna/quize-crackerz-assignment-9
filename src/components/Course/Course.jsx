@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 
+
+
 const Course = ({course}) => {
     // console.log(course)
-    const {id, name, logo} = course;
+    const {id, name, logo, total} = course;
     return (
         <div>
             <div className='course'>
@@ -19,6 +21,9 @@ const Course = ({course}) => {
                         </Link>    
                     </div> 
             </div>
+           <div>
+           
+           </div>
         </div>
     );
 };

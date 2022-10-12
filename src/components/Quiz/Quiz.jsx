@@ -3,24 +3,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useLoaderData } from 'react-router-dom';
 import './Quiz.css'
 import { faEye } from '@fortawesome/free-regular-svg-icons';
+import Statistics from '../Statistics/Statistics';
 
 const Quiz = () => {
     const quiz = useLoaderData();
     const questions = quiz.data.questions;
-    console.log(questions);
+    // console.log(questions);
     const {id, question, correctAnswer, options} = questions;
     
     const  handleCorrectIcon=(option)=>{
         // if(correctAnswer){
         //     option.id = conpmrrectAnswer
         // }
-
     }
-    const handleCorrectAns = (question, id) => {
-        if(questions.id === questions.correctAnswer){
-            alert('correct Answer')
+    const handleCorrectAns = (id) => {
+        if(id === correctAnswer) {
+            alert('correct Answer');
         }else{
-            alert('wrong Answer')
+            alert('wrong Answer');
         }
     };
      
@@ -34,9 +34,8 @@ const Quiz = () => {
                     <h3>{question.question}</h3>
                     
                     <div >
-                        {question.options.map( option => 
-                            <div className='answer-option' >
-                            <input onClick={()=> handleCorrectAns(questions,id)}  type="radio" id={option.id} name="answer" value="option"></input>
+                        {question.options.map( option =>   <div className='answer-option' key={option.id} >
+                            <input onClick={()=>handleCorrectAns(option, id)}  type="radio" id={option.id} name="answer" value="option"></input>
                             <label for="option">{option}</label>
                           </div>
                          
@@ -47,6 +46,9 @@ const Quiz = () => {
             </div>
             <div>
             </div>
+            <Statistics 
+                question={question}>
+            </Statistics>
         </div>
     );
 };
