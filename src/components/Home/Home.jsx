@@ -6,8 +6,10 @@ import './Home.css'
 
 const Home = () => {
     const courses = useLoaderData();
+    // let {data} = courses;
+    // let {id, name, logo, total} = data;
    
-    // console.log(courses);
+    console.log(courses);
     return (
        <div>
          <div className='hero'>

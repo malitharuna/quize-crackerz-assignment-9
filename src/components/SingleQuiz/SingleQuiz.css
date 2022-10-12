@@ -1,0 +1,17 @@
+.answers{
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    background-color: lightgray;
+    position: relative;
+}
+.answer-option{
+    background-color: coral;
+    margin: 10px;
+
+}
+.answer-icon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
